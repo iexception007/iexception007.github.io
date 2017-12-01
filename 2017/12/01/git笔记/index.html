@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | Hexo</title>
+  <title>git笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="git config –global user.name  “Your name”git config –global user.email “6098550@qq.com”   git initgit add readme.txtgit commit -m “write a readme file.”   git a">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git笔记">
+<meta property="og:url" content="http://yoursite.com/2017/12/01/git笔记/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="git config –global user.name  “Your name”git config –global user.email “6098550@qq.com”   git initgit add readme.txtgit commit -m “write a readme file.”   git add file1.txtgit add file2.txt file3.txtg">
+<meta property="og:updated_time" content="2017-12-01T05:33:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="git笔记">
+<meta name="twitter:description" content="git config –global user.name  “Your name”git config –global user.email “6098550@qq.com”   git initgit add readme.txtgit commit -m “write a readme file.”   git add file1.txtgit add file2.txt file3.txtg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -149,36 +154,109 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-git笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/01/git笔记/" class="archive-article-date">
-  	<time datetime="2017-12-01T05:32:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/01/git笔记/">git笔记</a>
+    <h1 class="article-title" itemprop="name">
+      git笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/01/git笔记/" class="archive-article-date">
+  	<time datetime="2017-12-01T05:32:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>git config –global user.name  “Your name”<br>git config –global user.email “6098550@qq.com”  </p>
+<p>git init<br>git add readme.txt<br>git commit -m “write a readme file.”  </p>
+<p>git add file1.txt<br>git add file2.txt file3.txt<br>git commit -m “add 3 file.”  </p>
+<p>git status<br>git diff readme.txt<br>git log<br>git log –pretty=oneline  </p>
+<p>git reset –hard commit_id.<br>git reflog  </p>
+<p>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。<br>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。<br>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。  </p>
+<p>1.working directory<br>2.stage<br>3.master  </p>
+<p>第一次修改 -&gt; git add -&gt; 第二次修改 -&gt; git add -&gt; git commit   </p>
+<p>git status<br>git checkout – readme.txt<br>让这个文件回到最近一次的 git commit git add 时的状态  </p>
+<p>git reset HEAD file<br>git checkout – readme.txt  </p>
+<p>git rm test.txt<br>git commit -m “remove test.txt”<br>git checkout – test.txt  </p>
+<p>git remote add origin git@github.com:michaelliao/learngit.git<br>git push -u origin master<br>git push origin master  </p>
+<p>git clone git@github.com:michaelliao/gitskills.git  </p>
+<p>1.列出本地已经存在的分支, 当前分支前面加*<br>git branch  </p>
+<p>2.列出远程的分支<br>git branch -r  </p>
+<p>3.列出本地分支和远程分支<br> git branch -a</p>
+<p>4.创建分支<br>git branch <name></name></p>
+<p>5.重命名<br>git branch -m|-M oldBranch newBranch  </p>
+<p>6.删除本地分支<br>git branch -d　<name><br>git branch -D  <name> 强制删除  </name></name></p>
+<p>7.删除远程分支<br>git branch -d -r <name><br>//删除分支,删除远程分支<br>git branch -d dev<br>git push –delete origin dev<br>删除过程分支git push origin dev  </name></p>
+<p>8.切换分支<br>git checkout <name>  </name></p>
+<p>9.创建并切换分支<br>git checkout -b <name>  </name></p>
+<p>10.更新master主线上的东西到该分支上<br>git check dev<br>git rebase master  </p>
+<p>11.切换到master分支<br>git checkout master<br>git rebase dev  </p>
+<p>12.合并分支<br>git checkout master<br>git merge dev (merge from dev)<br>git push orign_aliyun master  </p>
+<p>查看各个分支最后一次提交:<br>git branch -v<br>查看哪些分支示合并入当前分支<br>git branch —no-merged  </p>
+<p>更新远程库到本地<br>git fetch origin<br>推送分支:<br>git push origin dev  </p>
+<p>取远程分支合并到本地<br>git merge origin/dev<br>取远程分支并分化一个新分支<br>git checkout -b dev origin/dev  </p>
+<p>git checkout -b feature1<br>git add readmt.txt<br>git commit -m “AND simple”  </p>
+<p>git checkout master<br>git add readme.txt<br>git commit -m “&amp; simple”  </p>
+<p>git merge feature1  </p>
+<p>vim readme.txt  </p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD  </p>
+<h1 id="Creating-a-new-branch-is-quick-amp-simple"><a href="#Creating-a-new-branch-is-quick-amp-simple" class="headerlink" title="Creating a new branch is quick &amp; simple.  "></a>Creating a new branch is quick &amp; simple.  </h1><p>Creating a new branch is quick AND simple.  </p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>feature1  </p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Creating a new branch is quick and simple.  </p>
+<p>git add readme.txt<br>git commit -m “conflict fixed”   </p>
+<p>git log –graph –pretty=oneline –abbrev-commit<br>git branch -d feature1  </p>
+<p>//合并远程的代码<br>git fetch origin master:tmp<br>git diff tmp<br>git merge tmp  </p>
+<p>Git 放弃本地修改, 强制更新<br>git fetch —all<br>git reset —hard origin/master<br>git fetch 只是下载远程的库的内容，不做任何的合并 git reset 把HEAD指向刚刚下载的最新的版本  </p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -190,149 +268,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/01/git笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/01/centos自动挂载云盘/" class="archive-article-date">
-  	<time datetime="2017-12-01T04:41:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/01/centos自动挂载云盘/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">centos自动挂载云盘</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/01/centos自动挂载云盘/">centos自动挂载云盘</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">centos</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/01/分布式系统中etcd的应用/" class="archive-article-date">
-  	<time datetime="2017-12-01T04:35:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/01/分布式系统中etcd的应用/">分布式系统中etcd的应用</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">golang</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/27/mac-install-hexo-for-gihtub-blog/" class="archive-article-date">
-  	<time datetime="2017-11-27T05:47:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/27/mac-install-hexo-for-gihtub-blog/">mac install hexo for gihtub blog</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/27/hello-world/" class="archive-article-date">
-  	<time datetime="2017-11-27T05:29:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -355,8 +390,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
